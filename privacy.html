@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selo privacy policy</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1b19; --muted: #6b645c; --bg: #faf7f2; --accent: #c8702f; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f1ece4; --muted: #a59d92; --bg: #171513; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 32px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Selo privacy policy</h1>
+  <p class="muted">Last updated 19 October 2026 · <a href="./">Selo</a></p>
+
+  <p>Selo is a photo file manager made by Chaitus Media for its own studio staff. This page says
+     what Selo does with Google account data and with the files it moves between the studio's PCs.</p>
+
+  <h2>What Selo asks Google for</h2>
+  <p>Selo asks for one permission: <b>to see, create and delete only the Google Drive files that
+     Selo itself made</b> (Google's <code>drive.file</code> permission), plus the email address of
+     the account, to show which account is connected. Selo cannot see, open or change any other
+     file in the Google Drive.</p>
+
+  <h2>What Selo keeps in Google Drive</h2>
+  <ul>
+    <li><b>An address book</b> in a folder named "Selo studio network": one small entry per studio PC,
+        holding the PC's name, the name its user typed into Selo, a connection ID, and when it last
+        checked in. The studio's PCs use it to find each other over the internet.</li>
+    <li><b>Files sent between studio PCs</b>, only when two PCs cannot connect directly (for example,
+        the receiving PC is switched off). They are deleted as soon as the receiving PC has them, and
+        any left behind are deleted after 14 days.</li>
+  </ul>
+
+  <h2>What Selo does not do</h2>
+  <ul>
+    <li>It does not send Google data to Chaitus Media's servers or to anyone else. There are no such
+        servers: Selo talks only to Google and to the studio's own PCs.</li>
+    <li>It does not sell, share or use any data for advertising, and it does not use it to train AI models.</li>
+    <li>No person at Chaitus Media reads the address book or the files, except the studio staff the
+        files were sent to.</li>
+  </ul>
+
+  <h2>How it is protected</h2>
+  <p>The Google sign-in is stored only on the studio PC, encrypted for that Windows user. Files and
+     messages between studio PCs travel over encrypted connections. When two PCs cannot reach each
+     other directly, the connection may pass through a public relay server run by the makers of the
+     networking library Selo uses (iroh, by n0). The relay only forwards encrypted traffic and cannot read it.</p>
+
+  <h2>Removing access</h2>
+  <p>Right-click your name in Selo and choose "Disconnect from studio PCs outside", or remove Selo at
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Deleting
+     the "Selo studio network" folder from the Google Drive deletes everything Selo kept there.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Selo's use and transfer to any other app of information received from Google APIs will adhere to the
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+     including the Limited Use requirements.</p>
+
+  <h2>Contact</h2>
+  <p>Chaitus Media · <a href="mailto:chaitusmediateam@gmail.com">chaitusmediateam@gmail.com</a></p>
+</main>
+</body>
+</html>
